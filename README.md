@@ -87,7 +87,7 @@ Edit
 Ce projet est open source — vous pouvez le modifier ou l’utiliser à des fins pédagogiques.
 
 ✨ Contributeurs
-💡 Direction : Abdellahi et Mohamed
+💡 Direction : AbdellahiAhmed et MohamedOUMAR
 
 📚 Université : [ISCAE]
 
