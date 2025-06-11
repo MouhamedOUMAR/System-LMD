@@ -1,0 +1,217 @@
+/* Palette de couleurs */
+:root {
+    --primary-color: #003087; /* Bleu mauritanien */
+    --secondary-color: #FFD700; /* Or */
+    --background-color: #F8F9FA; /* Blanc cassé */
+    --text-color: #212529; /* Noir doux */
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    transition: all 0.3s ease;
+}
+
+.sidebar h3 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+h1.text-primary {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+/* Cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #002060;
+    border-color: #002060;
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-warning:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Tableaux */
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 48, 135, 0.05);
+}
+
+/* Formulaires */
+.form-control {
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 48, 135, 0.3);
+}
+
+/* Toasts */
+.toast {
+    border-radius: 10px;
+}
+
+.toast-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.toast-body {
+    background-color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.modal {
+    transition: all 0.3s ease-in-out;
+}
+.modal-dialog {
+    transform: translate(0, 0) !important;
+}
+.modal-backdrop {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.module-average {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.module-decision, .module-credits {
+    background-color: #f8f9fa;
+}
+
+.decision-validated {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.decision-rattrapage {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.decision-non-validé {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.decision-validated-with-debts {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.semester-decision {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+.collaboration-info {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #0066cc;
+    margin-left: 5px;
+}
+
+.status-collaborated {
+    color: #0066cc;
+    font-weight: bold;
+}
